@@ -2,6 +2,7 @@ const express = require('express')
 const ProjectsRouter = require('./data/routers/projectsRouter.js')
 const ActionsRouter = require('./data/routers/actionsRouter.js')
 const server = express()
+
 server.use(express.json())
 server.use('/api/projects', ProjectsRouter)
 server.use('/api/actions', ActionsRouter)
