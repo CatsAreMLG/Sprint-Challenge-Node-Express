@@ -4,7 +4,7 @@ const ActionsRouter = require('./data/routers/actionsRouter.js')
 const server = express()
 server.use(express.json())
 // server.use('/api/posts', ProjectsRouter)
-// server.use('/api/users', ActionsRouter)
+server.use('/api/actions', ActionsRouter)
 const PORT = 8888
 
 server.get('/', (req, res) => {
